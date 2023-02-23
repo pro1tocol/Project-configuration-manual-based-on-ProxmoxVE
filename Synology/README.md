@@ -22,5 +22,5 @@ Directly pass free hard drives to Synology
 
     # show hard drive list
     ls -l /dev/disk/by-id/
-    qm set 110 --sata1 /dev/disk/by-id/ata-KINGSTON_RBU-SNS2035q2911GF_628114B99281B638
+    qm set 111 --sata1 /dev/disk/by-id/ata-KINGSTON_RBU-SNS2035q2911GF_628114B99281B638
 The boot is set to sata0, not a direct hard disk, but a mirror image !
