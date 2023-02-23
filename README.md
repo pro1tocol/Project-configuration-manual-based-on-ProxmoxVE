@@ -64,7 +64,7 @@ Update kernel
     update-initramfs -u
 #### 4. Virtual machine related deployment
 
-<div align="center">
+<div align="left">
 
 | OS  | core| sockets| memory| SCSI| disk| net| BIOS|
 | ---------- | -----------| -----------| -----------| -----------| -----------| -----------| -----------|
