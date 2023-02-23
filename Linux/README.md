@@ -27,7 +27,7 @@ Language setting
     reboot
 ##### Network setting
 
-1) networkmanager
+`networkmanager`
 
     vim /etc/network/interfaces
     auto eth0
@@ -38,7 +38,7 @@ Language setting
     vim /etc/resolv.conf
     nameserver 223.5.5.5
     nameserver 8.8.4.4
-2) netplan
+`netplan`
 
     cd /etc/netplan && vim anyname.yaml
     network:
