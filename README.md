@@ -62,3 +62,12 @@ Shield related hardware drivers
 Update kernel
 
     update-initramfs -u
+#### 4. Virtual machine related deployment
+
+<div align="center">
+
+| OS  | core| sockets| memory| SCSI| disk| net| BIOS|
+| ---------- | -----------| -----------| -----------| -----------| -----------| -----------| -----------|
+| DSM   | 2   | 2   | 4112   | VIO   | STAT   | VIOParavirtualization   | OVMF   |
+
+</div>
