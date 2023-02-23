@@ -9,3 +9,10 @@ After completion, enter VSCode to install the plugin
     Remote-SSH
     Remote-Development
     Remote-Explorer
+### 2. Public network IP address query
+Overseas address inquiry
+
+    curl ipinfo.io/ip
+Local address lookup
+
+    
