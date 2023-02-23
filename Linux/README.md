@@ -25,6 +25,31 @@ Language setting
     
     sudo dpkg-reconfigure locales
     reboot
+Network setting
+
+1) networkmanager
+
+    vim /etc/network/interfaces
+    auto eth0
+    iface eth0 inet static   #dhcp
+          address 192.168.1.101/24
+          gateway 192.168.1.1
+    
+    vim /etc/resolv.conf
+    nameserver 223.5.5.5
+    nameserver 8.8.4.4
+2) netplan
+
+    cd /etc/netplan && vim anyname.yaml
+    network:
+        version: 2
+            ethernets:
+                eth0:
+                    dhcp4: no #yes
+                        addresses: [192.168.1.101/24]
+                        gateway4: 192.168.1.1
+                    nameservers:
+                        addresses: [8.8.8.8, 8.8.4.4]
 SSH Server setting
 
     vim /etc/ssh/sshd_config
@@ -36,14 +61,4 @@ SSH Server setting
     PermitRootLogin yes
     PubkeyAuthentication yes
     PasswordAuthentication yes
-Network setting
-
-    vim /etc/network/interfaces
-    auto eth0
-    iface eth0 inet static   #dhcp
-          address 192.168.1.101/24
-          gateway 192.168.1.1
-    
-    vim /etc/resolv.conf
-    nameserver 223.5.5.5
-    nameserver 8.8.4.4
+### 2. Ports configuration
