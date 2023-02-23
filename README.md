@@ -74,3 +74,12 @@ Update kernel
 | Linux   | 1   | 1   | 2096-3084   | VIO   | STAT   | VIO<br> Paravirtualization   | default   | default   | GUI    |
 
 </div>
+#### 5. Enable remote desktop in linux GUI environment
+
+Installation tool
+
+    xrdp
+    tigervnc-server
+Enable tool
+
+    systemctl start xrdp
