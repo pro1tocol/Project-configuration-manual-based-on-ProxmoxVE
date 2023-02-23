@@ -25,7 +25,7 @@ Language setting
     
     sudo dpkg-reconfigure locales
     reboot
-Network setting
+##### Network setting
 
 1) networkmanager
 
