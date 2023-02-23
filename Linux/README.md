@@ -1,6 +1,6 @@
 # Linux common settings and tools
 
-#### 1. Daily configuration
+### 1. Daily configuration
 modify time zone
 
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
