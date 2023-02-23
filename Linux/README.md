@@ -13,10 +13,18 @@ Language setting
     
     vim /etc/locale.gen
     en_US.UTF-8 UTF-8
+    zh_CN GB2312
+    zh_CN.GBK GBK
     zh_CN.UTF-8 UTF-8
     locale-gen
     
-    echo 'LANG=en_US.UTF-8'  > /etc/locale.conf
+    echo 'LANG=zh_CN.UTF-8'  > /etc/locale.conf
+    echo 'LANG=zh_CN.UTF-8'  > /etc/default/locale
+    vim /etc/environment
+    LANG="zh_CN.GB2312" LC_ALL="zh_CN.GBK"
+    
+    sudo dpkg-reconfigure locales
+    reboot
 SSH Server setting
 
     vim /etc/ssh/sshd_config
