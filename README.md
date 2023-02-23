@@ -22,7 +22,7 @@ update to the unofficial Proxmox VE (not recommended for production)
     deb [trusted=yes] http://download.proxmox.com/debian bullseye pve-no-subscription
     deb [trusted=yes] https://mirrors.ustc.edu.cn/proxmox/debian/pve bullseye pve-no-subscription
     
-#### 2. Start PVE host hardware/network card/graphics card transparent transmission
+#### 2. Start PVE host hardware/network/graphics transparent transmission
 Default startup item settings
 
     vim /etc/default/grub
