@@ -64,10 +64,10 @@ Update kernel
     update-initramfs -u
 #### 4. Virtual machine related deployment
 
-<div align="left">
+<div align="center">
 
-| OS  | core| sockets| memory| SCSI| disk| net| BIOS| others|
-| ---------- | -----------| -----------| -----------| -----------| -----------| -----------| -----------| -----------|
-| DSM   | 2   | 2   | 4112   | VIO   | STAT   | VIO<br> Paravirtualization   | OVMF   | CD/DVD drive removal<br> HDD delete    |
+| OS  | core| sockets| memory| SCSI| disk| net| model| BIOS| others|
+| ---------- | -----------| -----------| -----------| -----------| -----------| -----------| -----------| -----------| -----------|
+| DSM   | 2   | 2   | 4112   | VIO   | STAT   | VIO<br> Paravirtualization   | q35   | OVMF   | CD/DVD drive removal<br> HDD delete    |
 
 </div>
