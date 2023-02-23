@@ -49,7 +49,7 @@ Language setting
                         addresses: [192.168.1.101/24]
                         gateway4: 192.168.1.1
                     nameservers:
-                        addresses: [8.8.8.8, 8.8.4.4]
+                        addresses: [223.5.5.5, 8.8.4.4]
 SSH Server setting
 
     vim /etc/ssh/sshd_config
@@ -62,3 +62,42 @@ SSH Server setting
     PubkeyAuthentication yes
     PasswordAuthentication yes
 ### 2. Ports configuration
+
+`22`Close remote ssh port
+
+    systemctl status sshd.service
+    systemctl stop sshd.service
+    systemctl disable sshd.service
+`25`Close remote postfix port
+
+    systemctl status postfix.service
+    systemctl stop postfix.service
+    systemctl disable postfix.service
+`631`Close the network printer port
+
+    systemctl status cups.service
+    systemctl stop cups.service
+    systemctl disable cups.service
+`5355`Close the local DNS port
+
+    vim /etc/systemd/resolved.conf
+    LLMNR=0
+    
+    systemctl restart systemd-resolved.service
+`5353`UDP, close avahi lan printer port
+Scan port
+
+    netstat -anp | grep 5353
+Shut down service
+
+    systemctl status avahi-deamon.socket
+    systemctl stop avahi-deamon.socket
+    systemctl disable avahi-deamon.socket
+`127.0.0.53/54:53`Close
+
+    vim /etc/systemd/resolved.conf
+    DNSStubListener=no
+    
+    ln -sf /run/systemd/resolve/resolved.conf /etc/resolved.conf
+`reboot`the system
+
