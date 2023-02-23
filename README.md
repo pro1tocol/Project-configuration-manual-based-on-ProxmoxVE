@@ -66,8 +66,8 @@ Update kernel
 
 <div align="left">
 
-| OS  | core| sockets| memory| SCSI| disk| net| BIOS|
-| ---------- | -----------| -----------| -----------| -----------| -----------| -----------| -----------|
-| DSM   | 2   | 2   | 4112   | VIO   | STAT   | VIOParavirtualization   | OVMF   |
+| OS  | core| sockets| memory| SCSI| disk| net| BIOS| others|
+| ---------- | -----------| -----------| -----------| -----------| -----------| -----------| -----------| -----------|
+| DSM   | 2   | 2   | 4112   | VIO   | STAT   | VIOParavirtualization   | OVMF   | CD/DVD drive removal<br> HDD delete    |
 
 </div>
