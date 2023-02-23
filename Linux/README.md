@@ -50,7 +50,8 @@ Language setting
                         gateway4: 192.168.1.1
                     nameservers:
                         addresses: [223.5.5.5, 8.8.4.4]
-     sudo netplan apply
+
+    sudo netplan apply
 SSH Server setting
 
     vim /etc/ssh/sshd_config
