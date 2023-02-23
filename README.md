@@ -66,7 +66,7 @@ Update kernel
 
 <div align="center">
 
-| OS  | core| sockets| memory| SCSI| disk| net| model| BIOS| others|
+| OS  | core| sockets| memory| SCSI| disk| internet| model| BIOS| others|
 | ---------- | -----------| -----------| -----------| -----------| -----------| -----------| -----------| -----------| -----------|
 | DSM   | 2   | 2   | 4112   | VIO   | STAT   | VIO<br> Paravirtualization   | q35   | OVMF   | CD/DVD drive removal<br> HDD delete    |
 | Win10/11   | 2   | 1   | 2096-3084   | VIO   | VIO<br> SCSI   | VIO<br> Paravirtualization   | default   | default   | GUI    |
