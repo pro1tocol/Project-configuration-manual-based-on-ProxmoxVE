@@ -15,4 +15,6 @@ Overseas address inquiry
     curl ipinfo.io/ip
 Local address lookup
 
+    curl -L ip.tool.lu
+
     
