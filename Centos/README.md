@@ -15,7 +15,7 @@ Clean cache data
     dnf makecache
 Install daily tools
 
-    sudo yum install unzip tar gzip htop
+    sudo yum install unzip tar gzip htop    #prerequisites for installing vscode-server
     sudo dnf install epel-release
     sudo dnf install neofetch
     sudo dnf install iftop
