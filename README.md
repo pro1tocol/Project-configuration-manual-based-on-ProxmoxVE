@@ -83,3 +83,18 @@ Installation tool
 Enable tool
 
     systemctl start xrdp
+#### 6. Daily operation of the CLI
+
+PVE instruction set
+
+    qm list               #show VM devices
+    qm status <VMID>
+    qm stop <VMID>
+    qm shutdown <VMID>
+    qm start <VMID>
+    
+    lxc-ls -f             #show CT devices
+    lxc-info <NAME>
+    lxc-stop <NAME>
+    lxc-start <NAME>
+
