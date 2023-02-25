@@ -20,3 +20,7 @@ Install daily tools
     sudo dnf install neofetch
     sudo dnf install iftop
     sudo yum install openssh-server
+Switch SHELL
+
+    sudo dnf install util-linux-user        #fix 'chsh' command not found
+    chsh -s /bin/zsh
