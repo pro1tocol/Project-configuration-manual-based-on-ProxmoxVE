@@ -29,4 +29,6 @@ Manager
 
     netstat -b -o 4709
     tasklist /FI "PID eq 1136"
+    taskkill /f /pid 1136
+    taskkill /im chrome*
     
