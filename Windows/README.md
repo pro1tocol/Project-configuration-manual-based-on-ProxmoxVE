@@ -16,5 +16,17 @@ Overseas address inquiry
 Local address lookup
 
     curl -L ip.tool.lu
+### 3. Process management
+View open ports
 
+    netstat -ant
+    netstat -ano
+    netstat -p tcp -a
+    netstat -p udp -a
+    netstat -p tcp -a | findstr 80
+    netstat -p tcp -a | findstr 80
+Manager
+
+    netstat -b -o 4709
+    tasklist /FI "PID eq 1136"
     
