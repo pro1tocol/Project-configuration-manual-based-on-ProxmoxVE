@@ -24,3 +24,12 @@ Switch SHELL
 
     sudo dnf install util-linux-user        #fix 'chsh' command not found
     chsh -s /bin/zsh
+Switch language
+
+    sudo dnf install glibc-langpack-zh.x86_64
+    sudo yum -y install langpacks-zh_CN
+    
+    locale -a
+    vim /etc/locale.conf
+    . /etc/locale.conf
+    locale
