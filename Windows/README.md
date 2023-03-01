@@ -31,6 +31,8 @@ Manager
     tasklist /FI "PID eq 1136"
     taskkill /f /pid 1136
     taskkill /im chrome*
+### 4. UI optimization
+
 High contrast setting(desert)
 
 <div align="center">
