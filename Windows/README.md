@@ -31,4 +31,8 @@ Manager
     tasklist /FI "PID eq 1136"
     taskkill /f /pid 1136
     taskkill /im chrome*
-    
+High contrast setting
+
+    | main color  | secondary color| connecting color|
+    | ---------- | -----------| -----------|
+    | R:100<br>G:210<br>B:255   | R:0<br>G:0<br>B:0   | R:30<br>G:30<br>B:30   |
