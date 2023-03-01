@@ -33,7 +33,7 @@ Manager
     taskkill /im chrome*
 ### 4. UI optimization
 
-High contrast setting(desert)
+High contrast setting(水生)
 
 <div align="center">
     
