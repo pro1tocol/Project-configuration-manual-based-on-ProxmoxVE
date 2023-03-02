@@ -31,7 +31,7 @@ Manager
     tasklist /FI "PID eq 1136"
     taskkill /f /pid 1136
     taskkill /im chrome*
-### 4. UI optimization
+### 4. Optimization
 
 High contrast setting(水生)
 
@@ -42,3 +42,13 @@ High contrast setting(水生)
 | R:100<br>G:210<br>B:255   | R:0<br>G:0<br>B:0   | R:30<br>G:30<br>B:30   |
 
 </div>
+
+Change tpye
+
+    Win+R
+    regedit
+    
+    ..\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts
+    [Layout File] KBDUS.DLL to KBDUK.DLL
+    [Layout Text] US Keyboard to UK Keyboard
+    
