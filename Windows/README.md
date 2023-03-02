@@ -51,4 +51,9 @@ Change tpye
     ..\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts
     [Layout File] KBDUS.DLL to KBDUK.DLL
     [Layout Text] US Keyboard to UK Keyboard
-    
+Install python
+
+    ..\python.exe -m pip install --upgrade pip
+    Win+R
+    sysdm.cpl > advanced > environment variable
+    pip list
