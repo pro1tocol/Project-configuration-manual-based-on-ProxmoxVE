@@ -63,3 +63,8 @@ Install VIM
     Win+R
     sysdm.cpl > advanced > environment variable
     path > add editor directory
+Install Nmap
+
+    Win+R
+    sysdm.cpl > advanced > environment variable
+    C:\Program Files (x86)\Nmap
