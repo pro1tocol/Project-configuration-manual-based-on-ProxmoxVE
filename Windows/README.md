@@ -62,6 +62,10 @@ Install winfetch
     Get-ExecutionPolicy
     > Restricted or RemoteSigned
     Set-ExecutionPolicy RemoteSigned
+Install Ntop
+
+    choco install NTop.Portable
+    ntop
 Install VIM
 
     download gvim90.exe
