@@ -71,12 +71,20 @@ Install VIM
     download gvim90.exe
     Win+R
     sysdm.cpl > advanced > environment variable
-    path > add editor directory
+    Vim  > /local/address
+    path > %Vim%
 Install Nmap
 
     Win+R
     sysdm.cpl > advanced > environment variable
-    C:\Program Files (x86)\Nmap
+    Nmap  > C:\Program Files (x86)\Nmap
+    path > %Nmap%
 Install Git
 
     choco install git
+Install android
+
+    Win+R
+    sysdm.cpl > advanced > environment variable
+    Android  > /local/address
+    path > %Android%
