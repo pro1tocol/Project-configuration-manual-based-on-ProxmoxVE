@@ -82,7 +82,7 @@ Install Nmap
 Install Git
 
     choco install git
-Install android
+Install Android
 
     Win+R
     sysdm.cpl > advanced > environment variable
