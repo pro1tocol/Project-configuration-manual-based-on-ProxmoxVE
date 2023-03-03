@@ -5,17 +5,16 @@
 
 ### This folder is used to configure the related functions of the vscode compiler
 
-
-1. Remote Management Extension
+#### 1. Remote Management Extension
 
     Remote - SSH
     Remote - Tunnels
     Remote - Development
     Remote Explorer
-2. Artificial Intelligence
+#### 2. Artificial Intelligence
 
     ChatGPT
-3. Interpreter
+#### 3. Interpreter
 
 `WeChat`
 
@@ -31,6 +30,6 @@
     JavaScript(ES6) code snippets
     Python
     Pylance
-4. Preview Tool
+#### 4. Preview Tool
 
     Live Server
