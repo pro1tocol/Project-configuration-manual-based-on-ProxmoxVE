@@ -53,3 +53,9 @@ Install python
     Win+R
     sysdm.cpl > advanced > environment variable
     pip list
+Install VIM
+
+    download gvim90.exe
+    Win+R
+    sysdm.cpl > advanced > environment variable
+    path > add editor directory
