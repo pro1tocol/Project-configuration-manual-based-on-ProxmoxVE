@@ -57,6 +57,11 @@ Install python
     Win+R
     sysdm.cpl > advanced > environment variable
     pip list
+Install winfetch
+
+    Get-ExecutionPolicy
+    > Restricted or RemoteSigned
+    Set-ExecutionPolicy RemoteSigned
 Install VIM
 
     download gvim90.exe
