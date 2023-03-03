@@ -1,14 +1,9 @@
 # This folder is used to organize various tools for Windows
 
-### 1. Install OpenSSH tools for VSCode deployment plugin
+### 1. Install OpenSSH tool
 Open Windows PowerShell or Command Prompt as administrator
 
     Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH.Client*' | Add-WindowsCapability -Online
-After completion, enter VSCode to install the plugin
-
-    Remote-SSH
-    Remote-Development
-    Remote-Explorer
 ### 2. Public network IP address query
 Overseas address inquiry
 
@@ -21,6 +16,7 @@ View open ports
 
     netstat -ant
     netstat -ano
+    netstat -p tcp -ano
     netstat -p tcp -a
     netstat -p udp -a
     netstat -p tcp -a | findstr 80
