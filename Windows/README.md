@@ -77,3 +77,6 @@ Install Nmap
     Win+R
     sysdm.cpl > advanced > environment variable
     C:\Program Files (x86)\Nmap
+Install Git
+
+    choco install git
