@@ -1,9 +1,13 @@
 # This folder is used to organize various tools for Windows
 
-### 1. Install OpenSSH tool
+### 1. Install tools
 Open Windows PowerShell or Command Prompt as administrator
 
     Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH.Client*' | Add-WindowsCapability -Online
+Chocolatey
+
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
 ### 2. Public network IP address query
 Overseas address inquiry
 
