@@ -7,8 +7,7 @@ building..
     Adjust the position of the startup item
 ### Sddm login settings
 
-    cp /usr/share/doc/sddm/sddm.conf /etc/sddm.conf
-    vim /etc/sddm.conf
+    vim /usr/lib/sddm/sddm.conf.d/default.conf
     # Comma-separated list of users that should not be listed
     HideUsers=sync
     # Maximum user id for displayed users
