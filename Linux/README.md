@@ -1,6 +1,9 @@
 # Linux common settings and tools
 
 ### 1. Daily configuration
+View running services
+
+    systemctl --type=service
 modify time zone
 
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
