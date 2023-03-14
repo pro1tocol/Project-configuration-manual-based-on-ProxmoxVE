@@ -4,6 +4,7 @@
 View running services
 
     systemctl --type=service
+    systemctl | grep -i <bin>
 modify time zone
 
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
