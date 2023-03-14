@@ -18,3 +18,12 @@ building..
     vim /etc/pam.d/sddm
     #auth    required        pam_succeed_if.so user != root quiet_success
     auth    sufficient      pam_succeed_if.so user ingroup nopasswdlogin
+### Freerdp install
+
+point to the client
+
+    pacman -S krdc freerdp
+point to the server
+
+    yay -S xrdp xorgxrdp-glamor pulseaudio-module-xrdp
+    
