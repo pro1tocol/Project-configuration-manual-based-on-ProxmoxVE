@@ -17,6 +17,15 @@ building..
     mount -n -o remount，rw /
     passwd
     reboot
+### Configure a static IP address
+
+    pacman -Syy && pacman -S vim
+    vim /etc/systemd/network/xx.network
+    [Network]
+    Address=192.168.20.100/24
+    Gateway=192.168.20.2
+    DNS=8.8.8.8
+    DNS=8.8.4.4
 ### Sddm login settings
 
     vim /usr/lib/sddm/sddm.conf.d/default.conf
