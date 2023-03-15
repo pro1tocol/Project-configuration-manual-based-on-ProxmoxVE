@@ -9,6 +9,7 @@ building..
     mkdir workspace && wget https://mirrors.ustc.edu.cn/archlinux/images/v20230301.130409/Arch-Linux-x86_64-basic-20230301.130409.qcow2
     cd workspace/ && mv Arch-Linux-x86_64-basic-20230301.130409.qcow2 archlinux.qcow2
     sudo qm importdisk 100 archlinux.qcow2 SATA250
+    sudo qm disk resize 100 scsi0 70G
 ### BIOS settings
 
     'e' to edit
