@@ -71,6 +71,7 @@ point to the client
     pacman -S krdc freerdp
 point to the server
 
-    yay -S fuse patch autoconf automake pkg-config fakeroot gcc clang
-    yay -S xrdp xorgxrdp-glamor pulseaudio-module-xrdp
+    yay -S fuse patch autoconf automake pkg-config fakeroot gcc clang make
+    yay -S xrdp
+    yay -S xorgxrdp-glamor pulseaudio-module-xrdp
     
