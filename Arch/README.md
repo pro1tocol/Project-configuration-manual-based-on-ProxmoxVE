@@ -31,6 +31,12 @@ building..
     DNS=8.8.8.8
     DNS=8.8.4.4
     systemctl restart systemd-networkd
+### User settings
+
+    useradd -m -G wheel -s /bin/zsh alarm
+    passwd alarm
+    EDITOR=vim visudo
+    %wheel ALL=(ALL: ALL) ALL
 ### Sddm login settings
 
     vim /usr/lib/sddm/sddm.conf.d/default.conf
