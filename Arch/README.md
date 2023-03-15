@@ -2,9 +2,21 @@ building..
 
 ### Startup items settings
 
-    BIOS = OVMF
-    Add bios startup items to efi's file
-    Adjust the position of the startup item
+    BIOS = seaBIOS
+    virtIO SCSI
+### Initialization settings([archlinux](https://mirrors.ustc.edu.cn/archlinux/images/))
+
+    mkdir workspace && wget https://mirrors.ustc.edu.cn/archlinux/images/v20230301.130409/Arch-Linux-x86_64-basic-20230301.130409.qcow2
+    cd workspace/ && mv Arch-Linux-x86_64-basic-20230301.130409.qcow2 archlinux.qcow2
+    sudo qm importdisk 100 archlinux.qcow2 SATA250 size=70G
+### BIOS settings
+
+    'e' to edit
+    search 'Linux' go to the end, write 'init=/bin/bash'
+    ctrl + x
+    mount -n -o remount，rw /
+    passwd
+    reboot
 ### Sddm login settings
 
     vim /usr/lib/sddm/sddm.conf.d/default.conf
