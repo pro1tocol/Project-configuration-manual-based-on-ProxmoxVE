@@ -76,4 +76,4 @@ point to the server
     yay -S xorgxrdp-glamor
     yay -S jsoncpp libuv rhash bash-completion cmake sbc
     yay -S pulseaudio-module-xrdp
-    
+    PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
