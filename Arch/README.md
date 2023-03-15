@@ -73,7 +73,16 @@ point to the server
 
     yay -S fuse patch autoconf automake pkg-config meson fakeroot gcc clang make
     yay -S xrdp
-    yay -S xorgxrdp-glamor
-    yay -S jsoncpp libuv rhash bash-completion cmake sbc
-    yay -S pulseaudio-module-xrdp
-    PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+    yay -S xorgxrdp
+    echo 'allowed_users=anybody' > /etc/X11/Xwrapper.config
+    echo '/usr/lib/plasma-dbus-run-session-if-needed startplasma-x11' > ~/.xinitrc
+    sudo systemctl enable xrdp.service
+    sudo systemctl enable xrdp-sesman.service
+    sudo reboot
+    
+    vim /etc/polkit-1/rules.d/49-nopasswd_global.rules
+    polkit.addRule(function(action, subject) {
+        if (subject.isInGroup("wheel")) {
+            return polkit.Result.YES;
+        }
+    });
