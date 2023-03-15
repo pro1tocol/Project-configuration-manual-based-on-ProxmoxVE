@@ -37,6 +37,20 @@ building..
     passwd alarm
     EDITOR=vim visudo
     %wheel ALL=(ALL: ALL) ALL
+### Language settings
+
+    vim /etc/locale.gen
+    en_US.UTF-8 UTF-8
+    zh_CN.UTF-8 UTF-8
+    locale-gen
+    
+    echo 'LANG=zh_CN.UTF-8'  > /etc/locale.conf
+    echo 'LANG=zh_CN.UTF-8'  > /etc/default/locale
+    vim /etc/environment
+    LANGUAGE=zh_CN.UTF-8
+    LC_ALL=zh_CN.UTF-8
+    
+    perl -e exit
 ### Sddm login settings
 
     vim /usr/lib/sddm/sddm.conf.d/default.conf
