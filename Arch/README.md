@@ -18,19 +18,6 @@ building..
     mount -n -o remount，rw /
     passwd
     reboot
-### Configure a static IP address
-
-    pacman -Syy && pacman -S vim
-    vim /etc/systemd/network/xx.network
-    [Match]
-    Name=eth0
-    
-    [Network]
-    Address=192.168.20.100/24
-    Gateway=192.168.20.2
-    DNS=8.8.8.8
-    DNS=8.8.4.4
-    systemctl restart systemd-networkd
 ### User settings
 
     useradd -m -G wheel -s /bin/zsh alarm
