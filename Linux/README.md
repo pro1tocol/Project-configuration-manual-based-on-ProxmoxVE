@@ -31,6 +31,18 @@ Language setting
     reboot
 ##### Network setting
 
+`systemd-networkd` + `systemd-resolved`
+
+    vim /etc/systemd/network/xx.network
+    [Match]
+    Name=eth0
+
+    [Network]
+    Address=192.168.20.100/24
+    Gateway=192.168.20.2
+    DNS=8.8.8.8
+    DNS=8.8.4.4
+    systemctl restart systemd-networkd
 `networkmanager`
 
     vim /etc/network/interfaces
