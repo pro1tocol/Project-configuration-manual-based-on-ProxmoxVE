@@ -48,7 +48,7 @@ Change tpye
     Win+R
     regedit
     
-    ..\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts
+    ..\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\00000804 #Chinese
     [Layout File] KBDUS.DLL to KBDUK.DLL
     [Layout Text] US Keyboard to UK Keyboard
 Install python
