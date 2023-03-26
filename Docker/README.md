@@ -49,6 +49,8 @@ Docker-compose
         - apparmor=unconfined
         
     docker-compose up -d
+    docker-compose ps
+    docker-compose down
 
 
     
