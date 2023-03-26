@@ -7,7 +7,7 @@
 
 2.After the creation is complete, you need to check "nesting" under "Options-Function"
 
-    cd /etc/pve/lxc
+    cd /etc/pve/lxc/xxx.conf
     lxc.apparmor.profile: unconfined
     lxc.cgroup.devices.allow: a
     lxc.cap.drop:
