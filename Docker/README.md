@@ -47,6 +47,8 @@ Docker-compose
     services:
       security_opt:
         - apparmor=unconfined
+        
+    docker-compose up -d
 
 
     
