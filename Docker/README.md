@@ -11,6 +11,7 @@
     lxc.apparmor.profile: unconfined
     lxc.cgroup.devices.allow: a
     lxc.cap.drop:
+-------------------------------------
 ### Apt repository installation
 Install basic environment
 
@@ -28,6 +29,13 @@ Build tools
 
     sudo apt update
     sudo apt install docker-ce docker-ce-cli containerd.io docker-compose
+-------------------------------------
+## Third party container
+
+[NginxProxyManager/ChatgptWeb](https://allencj.com/archives/1536)
+
+[chenzhaoyu94/chatgpt-web](https://hub.docker.com/r/chenzhaoyu94/chatgpt-web)
+-------------------------------------
 ### Local container settings
 
 Docker
