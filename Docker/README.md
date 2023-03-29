@@ -24,11 +24,12 @@ Install key
     sudo chmod a+r /etc/apt/keyrings/docker.gpg
 Install sources
 
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 Build tools
 
-    nano /etc/apt/sources.list.d/docker.list
+    cat /etc/apt/sources.list.d/docker.list
     deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian bullseye stable
+    
     sudo apt update
     sudo apt install docker-ce docker-ce-cli containerd.io docker-compose
 -------------------------------------
