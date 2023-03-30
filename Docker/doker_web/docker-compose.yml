@@ -41,7 +41,7 @@ services:
     container_name: mysql
     environment:
       - TZ=Asia/Shanghai
-    ports:
+    expose:
       - "3306"
     env_file:
       - mysql.env
