@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  app:
+    image: chenzhaoyu94/chatgpt-web:latest
+    restart: unless-stopped
+    ports:
+      - 3002:3002
+    environment:
+      AUTH_SECRET_KEY: passwd
+      OPENAI_ACCESS_TOKEN: xxx
+      #OPENAI_API_KEY: xxx
