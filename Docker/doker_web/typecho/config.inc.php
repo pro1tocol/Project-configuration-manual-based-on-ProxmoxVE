@@ -6,5 +6,5 @@ define('__TYPECHO_DEBUG__', true);
 define('__TYPECHO_SECURE__',true);
 
 // CDN path
-define('__TYPECHO_CDN_DIR__', 'https://cyber-mobile.net');
+define('__TYPECHO_CDN_DIR__', 'https://your-web.net');
 
