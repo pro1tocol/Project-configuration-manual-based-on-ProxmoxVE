@@ -1,0 +1,12 @@
+    version: '3'
+
+    services:
+      cointop-web:
+        image: acaranta/cointop-web
+        ports:
+          - "7681:7681"
+        volumes:
+          - /etc/localtime:/etc/localtime:ro
+          - ./cointop:/root/.config/cointop
+        stdin_open: true
+        tty: true
