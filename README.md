@@ -62,6 +62,10 @@ Shield related hardware drivers
 Update kernel
 
     update-initramfs -u
+Qemu-server independent display through
+
+    args: -device vfio-pci,host=03:00.0,multifunction=on
+    # Use the "lspci" command to view the device number
 #### 4. Virtual machine related deployment
 
 <div align="center">
