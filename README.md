@@ -83,7 +83,6 @@ Qemu-server independent display through
 Installation tool
 
     xrdp
-    tigervnc-server
 Enable tool
 
     systemctl start xrdp
